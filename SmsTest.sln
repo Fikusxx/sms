@@ -1,0 +1,48 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{E5178C58-C691-4CC2-B2CB-3A3BA2EFD8AF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Actors", "src\Actors\Actors.csproj", "{D9C658DA-642B-43C7-A18D-C79539D6B277}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Templates", "src\Templates\Templates.csproj", "{C19A5C87-6600-4E78-8524-D1C53439A4AF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Processing", "src\Processing\Processing.csproj", "{DE19A245-3C71-4022-8D77-A58A53E30A5B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Contracts", "src\Contracts\Contracts.csproj", "{771C2A4C-85E2-462A-A208-34213E524713}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "common", "common", "{2E48582D-D7C9-4019-85BC-09C2C4751F80}"
+	ProjectSection(SolutionItems) = preProject
+		kafka.yaml = kafka.yaml
+		readme.md = readme.md
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{D9C658DA-642B-43C7-A18D-C79539D6B277} = {E5178C58-C691-4CC2-B2CB-3A3BA2EFD8AF}
+		{C19A5C87-6600-4E78-8524-D1C53439A4AF} = {E5178C58-C691-4CC2-B2CB-3A3BA2EFD8AF}
+		{DE19A245-3C71-4022-8D77-A58A53E30A5B} = {E5178C58-C691-4CC2-B2CB-3A3BA2EFD8AF}
+		{771C2A4C-85E2-462A-A208-34213E524713} = {E5178C58-C691-4CC2-B2CB-3A3BA2EFD8AF}
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D9C658DA-642B-43C7-A18D-C79539D6B277}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D9C658DA-642B-43C7-A18D-C79539D6B277}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D9C658DA-642B-43C7-A18D-C79539D6B277}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D9C658DA-642B-43C7-A18D-C79539D6B277}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C19A5C87-6600-4E78-8524-D1C53439A4AF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C19A5C87-6600-4E78-8524-D1C53439A4AF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C19A5C87-6600-4E78-8524-D1C53439A4AF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C19A5C87-6600-4E78-8524-D1C53439A4AF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DE19A245-3C71-4022-8D77-A58A53E30A5B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DE19A245-3C71-4022-8D77-A58A53E30A5B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DE19A245-3C71-4022-8D77-A58A53E30A5B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DE19A245-3C71-4022-8D77-A58A53E30A5B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{771C2A4C-85E2-462A-A208-34213E524713}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{771C2A4C-85E2-462A-A208-34213E524713}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{771C2A4C-85E2-462A-A208-34213E524713}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{771C2A4C-85E2-462A-A208-34213E524713}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
