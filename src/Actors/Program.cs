@@ -33,4 +33,10 @@ app.MapGet("/publish", async (ITopicProducer<SmsRequested> producer) =>
     })
     .WithName("Publish");
 
+app.MapGet("/threads", () =>
+{
+    ThreadPool.GetMaxThreads(out var workerThreads, out var ioThreads);
+    return Results.Ok(new { workerThreads, ioThreads });
+}).WithName("Threads");
+
 app.Run();

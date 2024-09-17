@@ -1,6 +1,7 @@
 using Confluent.Kafka;
 using Contracts;
 using MassTransit;
+using Microsoft.EntityFrameworkCore;
 
 namespace Processing;
 
@@ -49,5 +50,23 @@ public static class DependencyInjection
                 e.ConcurrentDeliveryLimit = 1;
                 e.ConfigureConsumer<SmsProcessedConsumer>(ctx);
             });
+    }
+    
+    public static WebApplicationBuilder AddDatabase(this WebApplicationBuilder builder)
+    {
+        builder.Services.AddDbContext<AppDbContext>(options =>
+            options.UseNpgsql(builder.Configuration.GetConnectionString("SmsDb")));
+
+        return builder;
+    }
+    
+    public static WebApplication CreateDb(this WebApplication app)
+    {
+        using var scope = app.Services.CreateScope();
+        var scopedServices = scope.ServiceProvider;
+        var context = scopedServices.GetRequiredService<AppDbContext>();
+        context.Database.EnsureCreated();
+
+        return app;
     }
 }

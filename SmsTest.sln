@@ -14,6 +14,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "common", "common", "{2E4858
 	ProjectSection(SolutionItems) = preProject
 		kafka.yaml = kafka.yaml
 		readme.md = readme.md
+		pg.yaml = pg.yaml
 	EndProjectSection
 EndProject
 Global
